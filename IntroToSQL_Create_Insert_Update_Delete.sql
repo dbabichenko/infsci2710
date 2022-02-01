@@ -97,3 +97,23 @@ VALUES
 (3, 1);
 
 SELECT * FROM customers_addresses;
+
+# DON'T EVER UPDATE OR DELTE WITHOUT A WHERE CLAUSE!!!
+# DELETE FROM customers_addresses;
+
+SELECT * FROM customers;
+SELECT * FROM customers WHERE customer_id = 3 OR customer_id = 4;
+SELECT * FROM customers WHERE last_name = 'Doe';
+
+# Update single column and single row
+UPDATE customers SET last_name = 'Smith' WHERE customer_id = 3;
+
+# Update multiple columns
+UPDATE customers SET last_name = 'Brown', dob = '1950-12-28' WHERE customer_id = 4;
+
+# Update multiple rows
+SELECT * FROM customers WHERE DAY(dob) = 11;
+UPDATE customers SET dob = '2000-11-11' WHERE DAY(dob) = 11;
+
+DELETE FROM customers WHERE customer_id = 1;
+
