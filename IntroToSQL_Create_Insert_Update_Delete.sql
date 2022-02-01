@@ -117,3 +117,10 @@ UPDATE customers SET dob = '2000-11-11' WHERE DAY(dob) = 11;
 
 DELETE FROM customers WHERE customer_id = 1;
 
+TRUNCATE TABLE customers_addresses;
+
+SELECT * FROM customers_addresses;
+
+SELECT first_name, last_name FROM customers WHERE last_name = 'Smith';
+
+SELECT * FROM addresses ORDER BY street1 DESC;
