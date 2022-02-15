@@ -176,3 +176,9 @@ GROUP BY customerName
 HAVING AVG(amount) >= 50000
 ORDER BY AVG(amount) DESC;
 
+# Right Join
+SELECT paymentDate, amount, customerName 
+FROM payments RIGHT JOIN customers ON payments.customerNumber = customers.customerNumber;
+
+# FULL JOIN
+
