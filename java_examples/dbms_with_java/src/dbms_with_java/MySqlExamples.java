@@ -11,8 +11,8 @@ public class MySqlExamples {
 
 	public static void main(String[] args) {
 		
-		select();
-		// insert();
+		// select();
+		insert();
 		
 		/*
 		String sql = "INSERT INTO books (book_id, first_name, last_name, number_of_books, dob) ";
@@ -43,7 +43,7 @@ public class MySqlExamples {
 		String dbUserName = "testUser"; // login name for the database server
 		String dbPassword = "testUser123@!@!"; // password for the database server
 
-		String sql = "SELECT * FROM employees;";
+		String sql = "SELECT * FROM employees LIMIT 50;";
 
 		try {
 			// Build connection string
@@ -85,8 +85,8 @@ public class MySqlExamples {
 		String dbUserName = "testUser"; // login name for the database server
 		String dbPassword = "testUser123@!@!"; // password for the database server
 
-		String sql = "INSERT INTO books (book_id, first_name, last_name, number_of_books, dob) ";
-		sql += "VALUES (5, 'Stephen', 'King', 400, '1947-09-21')";
+		String sql = "INSERT INTO employees (emp_no, birth_date, first_name, last_name, gender, hire_date) ";
+		sql += "VALUES (2, '1960-1-1', 'Bob', 'Smith', 'M', CURDATE());";
 
 		System.out.println(sql);
 
