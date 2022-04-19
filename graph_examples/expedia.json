@@ -1,0 +1,13 @@
+"airports" : [
+    {
+        "id" : 1, 
+        "name" : "PIT",
+        "terminals" : 10
+    },
+    {
+        "id" : 2, 
+        "name" : "DEN",
+        "terminals" : 10,
+        "restaurants" : 50
+    }
+]
